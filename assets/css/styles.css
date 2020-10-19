@@ -2,14 +2,42 @@
   font-family: "Roboto", sans-serif;
 }
 
+#banner div {
+  color: white;
+}
+
+.my-name {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 6rem !important;
+}
+
+.banner-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-wrap p {
+  position: relative;
+  z-index: 2;
+}
+
+.first-page-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0.5;
+}
+
 .black-text {
   color: black;
 }
 
 .first-page {
-  background-image: url("../../images/sf.jpg");
+  background-image: url("../../images/world-map.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 .about-me {
@@ -23,9 +51,19 @@
 }
 
 .title {
-  font-size: 3rem !important;
-  margin-bottom: 3rem;
+  font-size: 4rem !important;
+  font-weight: 900;
   color: black !important;
+  text-transform: uppercase;
+}
+
+.job-title {
+  font-size: 3.5rem !important;
+  font-weight: 500;
+}
+
+.right-align {
+  text-align: right;
 }
 
 .skills-icon {
@@ -34,13 +72,14 @@
 }
 
 .about-me-p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 300;
+  line-height: 2.2rem;
 }
 
 .profile-pic {
-  width: 100%;
-  border-radius: 50px;
+  width: 90%;
+  border-radius: 30px;
   /* border: 4px solid black; */
   padding: 25px;
 }
@@ -53,10 +92,30 @@
   background-color: rgb(242, 242, 247) !important;
 }
 
+a.nav-link {
+  text-transform: uppercase;
+}
+
 .project-images {
-  border: 4px solid rgba(229, 229, 234);
+  /* border: 4px solid rgba(199, 199, 204); */
   border-radius: 30px;
-  background-color: rgb(44, 44, 46);
+  /* background-color: rgb(72, 72, 74); */
+  border: 4px solid black;
+}
+
+.project-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 70%;
+}
+
+.project-for {
+  font-size: 2.5rem;
+  font-weight: 300;
 }
 
 .content h2 {
@@ -79,17 +138,6 @@
 
 .right-img {
   border-radius: 0 10px 10px 0;
-}
-
-.my-name {
-  line-height: normal;
-  font-size: 4rem !important;
-  letter-spacing: normal;
-  margin-bottom: 30px !important;
-}
-
-.job-title {
-  font-size: 2rem !important;
 }
 
 .about-me-section {
@@ -120,9 +168,85 @@
   font-weight: 100;
   font-size: 2rem;
   border-bottom: none;
+  color: #ff9ef7;
 }
 
 .contact {
-  background-color: white !important;
   color: black !important;
+}
+
+.contact-ul {
+  list-style: none;
+}
+
+.contact-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.contact-a {
+  color: black;
+}
+
+.copy-right {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .mobile-title {
+    margin-left: -5;
+  }
+
+  .mobile-row {
+    flex-direction: column;
+  }
+
+  .mobile-padding {
+    padding: 1rem !important;
+  }
+
+  .mobile-row div {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+    /* padding-left: 15px; */
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+  }
+
+  .project-for {
+    font-size: 2rem;
+  }
+
+  .short-description {
+    font-size: 1.5rem;
+  }
+
+  .mobile-img {
+    padding: 0 !important;
+  }
+
+  .mobile-project-hide {
+    display: none;
+  }
+
+  .mobile-project-show {
+    display: block !important;
+  }
+
+  .mobile-project-images {
+    background-color: white !important;
+  }
+
+  .mobile-project-images img {
+    border: 4px solid black;
+    border-radius: 10px;
+  }
+
+  .mobile-contact-padding {
+    padding: 20px !important;
+  }
 }
